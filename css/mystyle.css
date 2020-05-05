@@ -1,0 +1,50 @@
+.section1 {
+    background-color: coral;
+}
+
+#section2 {
+    background-color: darkgreen;
+}
+
+body {
+    background-image: url('../images/bg-intro-desktop.png');
+    background-color: coral;
+}
+
+h2 {
+    color: wheat;
+    font-size: 12px;
+}
+
+.btn1 {
+    border: solid 1px olivedrab;
+    border-radius: 15px;
+    font-size: 17px;
+    background-color: palegreen;
+    margin-left: 30px;
+    padding: 10px 30px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn1:hover {
+    background-color: teal;
+}
+
+.btn1:active {
+    transform: translateX(2px);
+}
+
+.btn2 {
+    margin-top: 30px;
+}
+
+#section2 {
+    background-color: turquoise;
+}
+
+#section2 p {
+    color: violet;
+}
