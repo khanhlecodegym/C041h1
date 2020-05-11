@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+    
+
+        .box-1 {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box-1">
+            <p>Money</p>
+        </div>
+        <div class="box-1">
+            <p>From</p>
+        </div>
+        <div class="box-1">
+            <p>To</p>
+        </div>
+        <div class="box-1">
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box-1">
+            <input type="number" name="" id="money">
+        </div>
+        <div class="box-1">
+            <select name="" id="frommoney">
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+            </select>
+        </div>
+        <div class="box-1">
+            <select name="" id="tomoney">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="box-1">
+            <button onclick="converMoney()">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/js2.js"></script>
+</body>
+</html>
