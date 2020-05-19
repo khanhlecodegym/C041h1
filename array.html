@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        background-color: #2196F3;
+    }
+
+    .container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+
+    .container>div:hover {
+        transform: rotate(0.98);
+    }
+</style>
+
+<body>
+
+    <div class="container" id="main">
+
+    </div>
+
+    <script>
+        // let num = 10;
+
+        // document.write(`Số là : ${num}`);
+
+        let row = 5;
+        let col = 5;
+        let array = [];
+        let main = document.getElementById('main');
+
+
+
+        function init() {
+            for (let i = 0; i < row; i++) {
+                array[i] = [];
+                for (let j = 0; j < col; j++) {
+                    array[i][j] = '.';
+                }
+            }
+
+            show();
+        }
+        init();
+
+        function show() {
+            text = "";
+            for (let i = 0; i < row; i++) {
+
+                for (let j = 0; j < col; j++) {
+                    text += `<div class='item' onclick='change()'>${array[i][j]} </div>`;
+                }
+
+            }
+
+            main.innerHTML = text;
+
+        }
+        // document.write(array);
+
+        // [
+        //     [3,3,3,3,3],
+        //     [3,3,3,3,3],
+        //     [3,3,3,3,3],
+        //     [3,3,3,3,3],
+        //     [3,3,3,3,3]
+        // ]
+
+        function change(i, j) {
+            array[i][j] = 'Đ';
+            init();
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  top: 105vh;
+  left: 0;
+  transform: translate(0) rotate(45deg);
+  animation: fly 3s linear infinite;
+}
+
+@keyframes fly {
+    to {
+        transform: translateY(-110vh) rotate(-45deg);
+    }
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: pink;
+}
+
+.heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
